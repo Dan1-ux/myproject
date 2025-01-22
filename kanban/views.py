@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from .models import Prospect
-from .forms import ProspectForm
+from .forms import Prospect, ProspectForm
 
 
 @login_required
@@ -15,7 +15,7 @@ def kanban_view(request):
     }
     return render(request, 'kanban.html', context)
 
-
+@login_required
 def dashboard_view(request):
     total_prospects = Prospect.objects.count()
     completed = Prospect.objects.filter(status='fase4').count()
