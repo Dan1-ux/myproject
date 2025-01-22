@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+	font-family: "Montserrat";
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--blue: #1D2065;
+	--white: #ffffff;
+	--gray1: #DADADA;
+	--gray2: #F2F2F2;
+	--yellow: #D88D34;
+	--black: #000000;
+}
+
+body{
+	min-height: 100vh;
+	overflow: hidden;
+	background-color: var(--gray1);
+}
+
+
+/*MENU LATERAL*/
+.container{
+	position: relative;
+	width: 100%;
+}
+
+.navigation{
+	position: fixed;
+	width: 300px;
+	height: 100%;
+	background: var(--blue);
+	border-left: 10px solid var(--blue);
+	transition: 0.5s;
+	overflow: hidden;
+}
+
+.navigation .title1{
+	display: flex;
+	width: 230px;
+	gap: 5px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid var(--white);
+}
+.navigation ul{
+	position: absolute;
+	left: 10px;
+	width: 100%;
+}
+
+.navigation ul li{
+	position: relative;
+	width: 100%;
+	list-style: none;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
+
+.navigation ul li:hover{
+	background-color: var(--white);
+}
+
+.navigation ul li:nth-child(1){
+	margin-bottom: 40px;
+	pointer-events: none;
+}
+
+.navigation ul li a{
+	position: relative;
+	display: block;
+	width: 100%;
+	display: flex;
+	text-decoration: none;
+	color: var(--white);
+}
+
+.navigation ul li a:hover{
+	color: var(--blue);
+}
+.navigation ul li a .toggle{
+	position: relative;
+	display: block;
+	min-width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: right;
+	padding-right: 20px;
+}
+
+.navigation ul li a .toggle ion-icon{
+	font-size: 30px;
+}
+
+.navigation ul li a .icon{
+	position: relative;
+	display: block;
+	min-width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+}
+
+.navigation ul li a .icon ion-icon{
+	font-size: 18px;
+}
+
+
+.navigation ul li a .title{
+	position: relative;
+	display: block;
+	padding: 0 3px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.navigation ul li a .title1{
+	position: relative;
+	display: block;
+	padding: 0 6px;
+	text-align: left;
+	line-height: 60px;
+	white-space: nowrap;
+	font-size: 25px;
+}
+
+.navigation ul li:hover a:before{
+	content: '';
+	position: absolute;
+	right: 0;
+	top: -50px;
+	width: 50px;
+	height: 50px;
+	background-color: transparent;
+	border-radius: 50%;
+	box-shadow: 35px 30px 0 10px var(--white);
+	pointer-events: none;
+}
+
+.navigation ul li:hover a:after{
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: -50px;
+	width: 50px;
+	height: 50px;
+	background-color: transparent;
+	border-radius: 50%;
+	box-shadow: 35px -35px 0 10px var(--white);
+	pointer-events: none;
+}
+
+
+/*MENU LATERAL*/
+.container{
+	position: relative;
+	width: 100%;
+}
+
+.navigation{
+	position: fixed;
+	width: 300px;
+	height: 100%;
+	background: var(--blue);
+	border-left: 10px solid var(--blue);
+	transition: 0.5s;
+	overflow: hidden;
+}
+
+.navigation .title1{
+	display: flex;
+	width: 230px;
+	gap: 5px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid var(--white);
+}
+.navigation ul{
+	position: absolute;
+	left: 10px;
+	width: 100%;
+}
+
+.navigation ul li{
+	position: relative;
+	width: 100%;
+	list-style: none;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
+
+.navigation ul li:hover{
+	background-color: var(--white);
+}
+
+.navigation ul li:nth-child(1){
+	margin-bottom: 40px;
+	pointer-events: none;
+}
+
+.navigation ul li a{
+	position: relative;
+	display: block;
+	width: 100%;
+	display: flex;
+	text-decoration: none;
+	color: var(--white);
+}
+
+.navigation ul li a:hover{
+	color: var(--blue);
+}
+.navigation ul li a .toggle{
+	position: relative;
+	display: block;
+	min-width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: right;
+	padding-right: 20px;
+}
+
+.navigation ul li a .toggle ion-icon{
+	font-size: 30px;
+}
+
+.navigation ul li a .icon{
+	position: relative;
+	display: block;
+	min-width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+}
+
+.navigation ul li a .icon ion-icon{
+	font-size: 18px;
+}
+
+
+.navigation ul li a .title{
+	position: relative;
+	display: block;
+	padding: 0 3px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.navigation ul li a .title1{
+	position: relative;
+	display: block;
+	padding: 0 6px;
+	text-align: left;
+	line-height: 60px;
+	white-space: nowrap;
+	font-size: 25px;
+}
+
+.navigation ul li:hover a:before{
+	content: '';
+	position: absolute;
+	right: 0;
+	top: -50px;
+	width: 50px;
+	height: 50px;
+	background-color: transparent;
+	border-radius: 50%;
+	box-shadow: 35px 30px 0 10px var(--white);
+	pointer-events: none;
+}
+
+.navigation ul li:hover a:after{
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: -50px;
+	width: 50px;
+	height: 50px;
+	background-color: transparent;
+	border-radius: 50%;
+	box-shadow: 35px -35px 0 10px var(--white);
+	pointer-events: none;
+}
+
+/*TOP BAR*/
+.top{
+	position: absolute;
+	width: calc(100% - 300px);
+	left: 300px;
+	height: 90px;
+	border-radius: 10px;
+	background-color: var(--white);
+	transition: 0.5s;
+}
+
+
+.topbar{
+	width: 100%;
+	height: 200px;
+	display: flex;
+	justify-content: space-between;
+	align-items: left;
+	padding: 10px 10px;
+}
+
+
+.logo img{
+	position: relative;
+	width: 70px;
+	height: 72px;
+}
+
+.search{
+	position: relative;
+	width: 100%;
+	margin: 10px 10px;
+}
+
+.search label{
+	position: relative;
+	width: 100%;
+}
+
+.search label input{
+	margin: 10px;
+	width: 450px;
+	height: 30px;
+	border-radius: 40px;
+	padding: 15px 20px;
+	padding-left: 20px;
+	font-size: 18px;
+	outline: none;
+	border: 1px solid var(--gray2);
+	background-color: var(--gray1);
+}
+
+.search label ion-icon{
+	position: absolute;
+	top: 0;
+	right: 20px;
+	font-size: 1.2rem;
+}
+
+.user{
+	position: relative;
+	width: 130px;
+	height: 75px;
+	border-radius: 50%;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.saludo .nombre{
+	position: relative;
+	width: 20px;
+	color: var(--yellow);
+	font-weight: bolder;
+	left: 20px;
+	padding: 10px;
+	top: 5px;
+}
+
+.saludo .bienvenida{
+	position: relative;
+	width: 16px;
+	left: 10px;
+	top: 5px;
+	text-align: right;
+
+}
+
+.user img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
